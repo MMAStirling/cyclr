@@ -1,5 +1,8 @@
 ## code to prepare `ksi_raw` dataset
-
+library(magrittr)
+library(tibble)
+library(dplyr)
+library(forcats)
 ksi_raw <- rio::import("data-raw/cyclist serious or fatal collisionin TO_2006-2019.xlsx", sheet="Cyclists")
 
 ksi_raw <- ksi_raw %>%
@@ -12,7 +15,7 @@ categoricals <- c("road_class", "district",
                   "loccoord","accloc","traffctl",
                   "visibility", "rdsfcond", "acclass",
                   "impactype","invage", "injury", "initdir",
-                  "vehtype", "manoeuver","hood_id","neighbourhood",
+                  "vehtype", "manoeuver","hood_id","neighbourhood"
                   )
 
 # deselect columns that is not useful
