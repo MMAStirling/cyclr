@@ -15,8 +15,7 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 URL: https://github.com/MMAStirling/cyclr
 BugReports: https://github.com/MMAStirling/cyclr/issues
-Depends: 
-    tidyverse
+
 Imports: 
     rio,
     janitor,
