@@ -30,27 +30,27 @@ ksi_semi <- ksi_raw %>%
          age = invage
          )
 
-glimpse(ksi_semi)
-
-ksi_semi %>%
-  count(minute, sort = T) # so many incidents happened at round hours, suggest quality issues
-
-ksi_semi %>%
-  count(is.na(light))
-
-ksi_semi %>%
-  count(object_id, sort = T) %>% view
-
-ksi_semi %>%
-  count(fatal_no, sort = T) %>%.[[1]] %>%levels()
+# glimpse(ksi_semi)
+#
+# ksi_semi %>%
+#   count(minute, sort = T) # so many incidents happened at round hours, suggest quality issues
+#
+# ksi_semi %>%
+#   count(is.na(light))
+#
+# ksi_semi %>%
+#   count(object_id, sort = T) %>% view
+#
+# ksi_semi %>%
+#   count(fatal_no, sort = T) %>%.[[1]] %>%levels()
 
 ksi <- ksi_semi
 
-library(mice)
+# library(mice)
 
-md.pattern(ksi_semi)
+# md.pattern(ksi_semi)
 
-DataExplorer::create_report(ksi_semi)
+# DataExplorer::create_report(ksi_semi)
 
 usethis::use_data(ksi, overwrite = TRUE)
 
