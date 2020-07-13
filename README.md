@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of cyclr is to import, clean tidy, visualize, analyze and predict the Killed and Seriously Injured (KSI) data of Toronto
+The goal of cyclr is to import, clean tidy, visualize, analyze and predict the Killed and Seriously Injured (KSI) data of Toronto subsetted for incidents involved cyclists.
 
 View traffic related collisions involving Cyclists. These events include any serious or fatal collision where a cyclist is involved.
 
