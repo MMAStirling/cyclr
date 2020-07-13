@@ -25,6 +25,9 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(cyclr)
-## basic example code
+
+glimpse(ksi) # see the data after initial cleaning
+
+?ksi ## view the data dictionary
 ```
 
