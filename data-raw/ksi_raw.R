@@ -1,4 +1,4 @@
-## code to prepare `ksi_raw` dataset
+## code to prepare `ksi` dataset
 library(magrittr)
 library(tibble)
 library(dplyr)
@@ -33,6 +33,9 @@ ksi_semi <- ksi_raw %>%
          age = invage
          )
 
+ksi <- ksi_semi
+
+usethis::use_data(ksi, overwrite = TRUE)
 # glimpse(ksi_semi)
 #
 # ksi_semi %>%
@@ -47,7 +50,6 @@ ksi_semi <- ksi_raw %>%
 # ksi_semi %>%
 #   count(fatal_no, sort = T) %>%.[[1]] %>%levels()
 
-ksi <- ksi_semi
 
 # library(mice)
 
@@ -55,5 +57,4 @@ ksi <- ksi_semi
 
 # DataExplorer::create_report(ksi_semi)
 
-usethis::use_data(ksi, overwrite = TRUE)
 
